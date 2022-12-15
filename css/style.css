@@ -1,0 +1,148 @@
+/* Be sure to add your own classes and IDs and keep track of them along with your HTML Nesting !!!!*/
+
+/* A few lesser recalled CSS props you should Google: opacity, text-transform, transition, letter spacing, gap; These will help with formatting text */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  /* bodybuilders do this on stage  */
+  flex-direction: column;
+  /* Tetris players break these  */
+}
+
+html{
+    background-color: #09102c;
+}
+
+/* FOR HEADER ONLY: if theres an empty comment, a CSS property is missing */
+header{
+    /* FREEBIE: uncomment the line below when you are ready to style the background image  */
+    background-image: url(images/background.jpeg);
+    background-size: cover;
+    height: 700px;
+  /* ^ experiment with this number */
+    background-position: 50%;
+  /* display: ; */
+    margin: 50px;
+}
+
+/* BELOW you should probably have selectors for both buttons, the section, the imgs, the p tags and the span within the p  */
+
+/* HINT  */
+
+header .log{
+    width: 80px;
+    padding: 10px;
+    background-color: #000;
+    position: relative;
+    float: right;
+    margin: 20px;
+    border: 1px solid #fce82f;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.log:hover{
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+
+header section {
+    /* height: 500px; */
+    /* display: block; */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 100px;
+    letter-spacing: 0.4px;
+    /* width: 45%;
+    /* height: 500px; */
+    /* margin: auto; */
+    /* position: relative; */
+}
+
+header a{
+    color: #fff;
+}
+
+header button.GTB{
+    background-color: #3333f3;
+    border: none;
+    color: #fff;
+    padding:10px;
+    width: 220px;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+header button.GTB:hover{
+    background-color: #fff;
+    color: #3333f3;
+}
+
+header section p{
+    color: #fff;
+    margin: 30px;
+}
+
+section p a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+#shows{
+    display: flex;
+    justify-content: center;
+}
+
+article li{
+    /* width: 90%;
+    height: 600px;
+    border: 5px solid #fff; */
+    display: inline-block;
+    color: #fff;
+    /* margin: 60px; */
+    letter-spacing: 1px;
+    margin-left: 120px;
+}
+
+#showCards{
+    display: inline-grid;
+}
+
+div img{
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+footer{
+  
+}
+
+
+/* STOP!!! No regular CSS properties should go below! This section is for the media queries */
+
+/* FREEBIE: here are the media queries, its up to YOU to choose the appropriate selectors and NEST them within the query properly. I will give you one for each media query */
+
+@media screen and (max-width:960px){
+  header section img{
+
+  }
+}
+
+
+@media screen and (max-width:740px){
+#shows ul{
+
+}
+
+}
